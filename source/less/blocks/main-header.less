@@ -1,0 +1,29 @@
+.main-header {
+  background-color: @dark;
+}
+
+.main-header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+@media (min-width: @desktop-width) {
+  .main-header__container {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(40, 54, 69, 0.3);
+    margin-bottom: -60px;
+  }
+
+  .main-header__logo {
+    z-index: 10;
+    width: 147px;
+    height: 40px;
+  }
+
+  .main-header__toggle {
+    display: none;
+  }
+}
