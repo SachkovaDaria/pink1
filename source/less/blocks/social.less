@@ -1,0 +1,23 @@
+.social__item {
+  fill: #d22856;
+  position: relative;
+  margin-left: 50px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    opacity: 0.1;
+    border: solid 3px @dark;
+    border-radius: 50%;
+    background-color: @white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+}

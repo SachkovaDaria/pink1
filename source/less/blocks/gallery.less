@@ -1,0 +1,82 @@
+.gallery {
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+.gallery__text {
+  color: @dark;
+  margin-top: 0;
+  margin-bottom: 55px;
+  line-height: 25px;
+}
+
+.gallery__text--bottom {
+  margin-bottom: 0;
+}
+
+.gallery__panorama {
+  margin: 0 -20px;
+  position: relative;
+
+  &::before {
+    content: "ПАНОРАМА ДНЯ";
+    position: absolute;
+    width: 140px;
+    height: 36px;
+    background-color: #d22856;
+    font-size: 12px;
+    font-weight: 500;
+    color: @white;
+    display: block;
+    text-transform: uppercase;
+    top: 0;
+    right: 20px;
+    padding: 10px;
+  }
+}
+
+.gallery__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.gallery__list-item {
+  margin-bottom: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .gallery__text {
+    font-size: 18px;
+    padding: 0 40px;
+  }
+
+  .gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .gallery__list-item {
+    max-width: 300px;
+  }
+
+  .gallery__panorama {
+    &::before {
+      top: 57px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gallery__panorama {
+    margin: 0 -130px;
+
+    &::before {
+      right: 130px;
+    }
+  }
+}

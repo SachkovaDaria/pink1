@@ -1,0 +1,34 @@
+.review {
+  text-align: center;
+}
+
+.review__comment {
+  line-height: 2.14;
+}
+
+.review__age {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .review {
+    margin-top: 100px;
+  }
+
+  .review__age {
+    display: block;
+    color: @dark;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .review__slide {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .review__comment {
+    font-size: 18px;
+    margin: 0;
+  }
+}

@@ -3,18 +3,20 @@
   text-align: center;
   padding-top: 30px;
   padding-bottom: 35px;
+  margin: 0 -20px;
 }
 
 .platforms__button {
   color: @white;
   border: 3px solid @white;
   border-radius: 30px;
-  padding: 20px 30px;
+  padding: 18px 0;
   font-size: 18px;
   font-weight: 700;
   line-height: 1;
   text-align: center;
   display: block;
+  margin-top: 40px;
 }
 
 .platforms__container {
@@ -26,23 +28,26 @@
   color: @white;
 }
 
+.platforms__item {
+  margin-left: 35px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
 
 @media (min-width: @tablet-width) {
   .platforms {
-    position: absolute;
-    bottom: 40px;
-    left: 0;
     background-color: transparent;
     max-width: 350px;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+    position: relative;
   }
 
   .platforms__text {
     font-size: 18px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .platforms {
-    left: 130px;
   }
 }

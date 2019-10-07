@@ -1,0 +1,151 @@
+.rates {
+  background-color: @grey-bgr;
+  overflow: hidden;
+  z-index: 0;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  position: relative;
+
+  &::before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    background-image: url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 170px;
+    background-color: transparent;
+  }
+}
+
+.rates__name {
+  background-color: @dark;
+  color: @white;
+  text-transform: uppercase;
+}
+
+.rates__name-item {
+  font-size: 18px;
+  text-align: center;
+  background: @dark;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.rates__table {
+  table-layout: fixed;
+  position: relative;
+  width: 834px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 45px;
+}
+
+.rates__price {
+  font-size: 24px;
+  font-weight: 300;
+  display: block;
+}
+
+.rates__feature-item {
+  background-color: @white;
+  padding: 20px;
+  width: 276px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.rates__name-item--hidden {
+  display: none;
+}
+
+.rates__name-item--mobile-icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.rates__name-item--best {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("../img/bg-hit.svg");
+    background-repeat: no-repeat;
+    width: 74px;
+    height: 73px;
+  }
+
+  &::after {
+    content: "хит";
+    font-size: 14px;
+    font-weight: 500;
+    transform: rotate(-45deg);
+    position: absolute;
+    text-transform: uppercase;
+    left: 15px;
+    top: 15px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .rates__name-item--hidden {
+    display: table-cell;
+  }
+
+  .rates__name-item--mobile {
+    display: none;
+  }
+
+  .rates__name-item {
+    font-size: 16px;
+  }
+
+  .rates__table {
+    width: 100%;
+  }
+
+  .rates__feature-item {
+    font-size: 14px;
+    text-transform: none;
+    padding: 15px 15px;
+    text-align: center;
+  }
+
+  .rates__feature-item--option {
+    text-align: left;
+  }
+
+  .rates__price {
+    font-size: 18px;
+  }
+
+
+  .rates__name-item--empty {
+    background-color: #f2f2f2;
+  }
+
+  .rates__name-item--best {
+    &::before {
+      content: "";
+      background-image: url("../img/bg-hit-tablet.svg");
+      width: 61px;
+      height: 61px;
+    }
+
+    &::after {
+      font-size: 10px;
+      font-weight: 600;
+      left: 10px;
+      top: 10px;
+    }
+  }
+}

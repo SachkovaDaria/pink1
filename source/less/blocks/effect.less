@@ -1,0 +1,83 @@
+.effect {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .effect {
+    display: block;
+    margin-top: 60px;
+  }
+
+  .effect__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      width: 238px;
+      height: 276px;
+      display: block;
+      background-image: url("../img/icon-timer.svg");
+      background-repeat: no-repeat;
+      background-size: 238px auto;
+      background-position: 0 0;
+    }
+
+    &::after {
+      content: "24";
+      position: absolute;
+      width: 202px;
+      height: 202px;
+      display: block;
+      border-radius: 50%;
+      border: 15px solid  #d22856;
+      color: #d22856;
+      font-size: 96px;
+      font-weight: 700;
+      text-align: center;
+      top: 55px;
+      left: 35px;
+    }
+  }
+
+  .effect__inner {
+    max-width: 300px;
+    margin-left: 70px;
+  }
+
+  .effect__title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #000000;
+  }
+
+  .effect__link {
+    color: #d22856;
+    border-bottom: 1px solid  #d22856;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .effect {
+    background-color: @grey-bgr;
+    margin-top: 0;
+    padding-top: 60px;
+    padding-bottom: 120px;
+  }
+
+  .effect__inner {
+    max-width: 550px;
+  }
+
+  .effect__text,
+  .effect__link {
+    font-size: 18px;
+  }
+
+  .effect__container {
+    &::after {
+      left: 150px;
+    }
+  }
+}
