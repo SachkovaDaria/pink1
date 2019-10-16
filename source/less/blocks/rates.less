@@ -60,11 +60,11 @@
   text-transform: uppercase;
 }
 
-.rates__name-item--hidden {
+.rates__feature-item--hidden {
   display: none;
 }
 
-.rates__name-item--mobile-icon {
+.rates__feature__mobile-icon {
   position: absolute;
   right: 20px;
   top: 20px;
@@ -97,11 +97,11 @@
 }
 
 @media (min-width: @tablet-width) {
-  .rates__name-item--hidden {
+  .rates__feature-item--hidden {
     display: table-cell;
   }
 
-  .rates__name-item--mobile {
+  .rates__feature-item--mobile {
     display: none;
   }
 
@@ -146,6 +146,14 @@
       font-weight: 600;
       left: 10px;
       top: 10px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .rates {
+    &::before {
+      background-size: cover;
     }
   }
 }

@@ -17,8 +17,62 @@
   font-weight: 300;
   color: #d22856;
   margin: 0;
+
+  &:hover {
+    color: @dark;
+    border-bottom: 1px solid @dark;
+  }
+
+  &:focus {
+    color: rgba(40, 54, 69, 0.3);
+    border: none;
+  }
 }
 
 .contscts__title {
   margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__text-item {
+    font-size: 40px;
+  }
+
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .contacts__item {
+    flex: 0 0 240px;
+
+    &:nth-child(2) {
+      margin-left: 100px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__text-item {
+    font-size: 50px;
+  }
+
+  .contacts__item {
+    flex: 0 0 240px;
+
+    &:nth-child(2) {
+      margin-left: 100px;
+    }
+  }
+
+  .contacts__item-address {
+    order: 2;
+    margin-left: 115px;
+  }
+
+  .contacts__item-mail {
+    order: 3;
+  }
 }

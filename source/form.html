@@ -24,7 +24,7 @@
                         <li class="header-nav__item "><a href="index.html" class="header-nav__link">Главная</a></li>
                         <li class="header-nav__item"><a href="galery.html" class="header-nav__link">Фотографии</a></li>
                         <li class="header-nav__item header-nav__item--active"><a href="#" class="header-nav__link">Конкурс</a></li>
-                        <li class="header-nav__item"><a href="#" class="header-nav__link">HTML Academy</a></li>
+                        <li class="header-nav__item"><a href="https://htmlacademy.ru/" class="header-nav__link">HTML Academy</a></li>
                     </ul>
                 </nav>
             </div>
@@ -35,103 +35,113 @@
           <h1 class="promo-page__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
         </div>
       </div>
+      <div class="container">
       <div class="form">
-        <div class="container">
-          <p class="form__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="form__text--hidden"></span>Пожалуйста, заполните форму ниже:</span></p>
-          <div class="form__part">
-              <form class="user-form" action="#" name="user-form">
-                  <div class="wrap-form user-form__fist-info">
-                      <div class="user-form__container user-form__container-info">
-                          <p class="user-form__part">
-                              <label for="user-lastname">фамилия</label>
-                              <input class="user-form__input" placeholder="Укажите фамилию *" type="text" id="user-name" name="user-lastname" value=""/>
+          <p class="form__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="form__text-hidden">Пожалуйста, заполните форму ниже:</span></p>
+          </div>
+          <form class="user-form" action="#" name="user-form">
+                  <div class="user-form__part">
+                      <div class="user-form__name-container">
+                      <div class="user-form__name">
+                          <p class="user-form__name-part">
+                              <label class="user-form__label" for="user-lastname">фамилия</label>
+                              <input class="user-form__input" placeholder="Укажите фамилию *" type="text" id="user-lastname" name="user-lastname" value=""/>
                           </p>
-                          <p class="user-form__part">
-                              <label for="user-name">Имя</label>
-                              <input class="user-form__input" placeholder="Введите ваше имя *" type="text" id="user-weight" name="user-name" value="" />
+                          <p class="user-form__name-part">
+                              <label class="user-form__label" for="user-name">Имя</label>
+                              <input class="user-form__input" placeholder="Введите ваше имя *" type="text" id="user-name" name="user-name" value="" />
                           </p>
-                          <p class="user-form__part">
-                              <label for="user-patronymic">отчество</label>
-                              <input class="user-form__input" placeholder="Ну и отчество тоже" type="text" id="user-age" name="user-patronymic" value="" />
+                          <p class="user-form__name-part">
+                              <label class="user-form__label" for="user-patronymic">отчество</label>
+                              <input class="user-form__input" placeholder="Ну и отчество тоже" type="text" id="user-patronymic" name="user-patronymic" value="" />
                           </p>
-                      </div>
-                      <div class="user-form__container user-form__input-btn">
-                        <h3>Ваши безбашенные достижения в путешествии</h3>
-                          <div class="user-form__container-program">
-                            <p>
-                              <input class="visually-hidden user-form__input-radio" name="user-form__program" type="radio" id="losing-weight">
-                              <label class="user-form__label" for="losing-weight">Сделал селфи с акулой</label>
-                            </p>
-                            <p>
-                              <input class="visually-hidden user-form__input-radio" name="user-form__program" type="radio" id="add-mass">
-                              <label class="user-form__label" for="add-mass">Обгорел на пляже</label>
-                            </p>
-                            <p>
-                              <input class="visually-hidden user-form__input-radio" name="user-form__program" type="radio" id="advice">
-                              <label class="user-form__label" for="advice">Видел Чака Норриса</label>
-                            </p>
-                            <p>
-                              <input class="visually-hidden user-form__input-radio" name="user-form__program" type="radio" id="losing-weight">
-                              <label class="user-form__label" for="losing-weight">Накупил сувениров</label>
-                            </p>
-                            <p>
-                              <input class="visually-hidden user-form__input-radio" name="user-form__program" type="radio" id="add-mass">
-                              <label class="user-form__label" for="add-mass">Удержал башню</label>
-                            </p>
-                            <p>
-                              <input class="visually-hidden user-form__input-radio" name="user-form__program" type="radio" id="advice">
-                              <label class="user-form__label" for="advice">Разгромил отель</label>
-                            </p>
-                          </div>
                       </div>
                   </div>
-                  <div class="user-form__container-contact">
-                      <div class="wrap-form">
-                          <div class="user-form__contact-wrap">
-                              <p class="user-form__contact-part">
-                                  <label for="user-tel">Номер телефона</label>
-                                  <input class="user-form__input user-form__input--phone" placeholder="Номер, пожалуйста" type="text" id="user-tel" name="user-tel" value="" />
-                              </p>
-                              <p class="user-form__contact-part">
-                                  <label for="user-email" >адрес почты</label>
-                                  <input class="user-form__input user-form__input--email"  placeholder="Введите почту *" type="text" id="user-email" name="user-email" value="" />
-                              </p>
-
+                </div>
+                      <div class="user-form__part user-form__part-achieve">
+                        <div class="user-form__achieve-container">
+                        <h2 class="user-form__title">Ваши безбашенные достижения в путешествии</h2>
+                        <div class="user-form__container">
+                          <div class="user-form__part-list">
+                            <p class="user-form__part-item">
+                              <input class="visually-hidden user-form__input-checkbox" name="achieve" type="checkbox" id="selfe">
+                              <label class="user-form__label-checkbox" for="selfe">Сделал селфи с акулой</label>
+                            </p>
+                            <p class="user-form__part-item">
+                              <input class="visually-hidden user-form__input-checkbox" name="achieve" type="checkbox" id="sunbathe">
+                              <label class="user-form__label-checkbox" for="sunbathe">Обгорел на пляже</label>
+                            </p>
+                            <p class="user-form__part-item">
+                              <input class="visually-hidden user-form__input-checkbox" name="achieve" type="checkbox" id="noris">
+                              <label class="user-form__label-checkbox" for="noris">Видел Чака Норриса</label>
+                            </p>
+                            <p class="user-form__part-item">
+                              <input class="visually-hidden user-form__input-checkbox" name="achieve" type="checkbox" id="souvenir">
+                              <label class="user-form__label-checkbox" for="souvenir">Накупил сувениров</label>
+                            </p>
+                            <p class="user-form__part-item">
+                              <input class="visually-hidden user-form__input-checkbox" name="achieve" type="checkbox" id="tower">
+                              <label class="user-form__label-checkbox" for="tower">Удержал башню</label>
+                            </p>
+                            <p class="user-form__part-item">
+                              <input class="visually-hidden user-form__input-checkbox" name="achieve" type="checkbox" id="hotel">
+                              <label class="user-form__label-checkbox" for="hotel">Разгромил отель</label>
+                            </p>
                           </div>
                       </div>
+                    </div>
                   </div>
-                  <div class="user-form__container-more">
-                      <div class="wrap-form">
-                          <h3>С каким приложением путешествовали?</h3>
-                          <div class="user-form__inner-more">
-                              <p class="user-form__part-more">
-                                  <input class="visually-hidden user-form__input-more" type="radio" id="ios">
-                                  <label class="user-form__label user-form__label-more" for="ios">Pink для iOS</label>
+                  <div class="user-form__part-contact">
+                        <h2 class="user-form__title user-form__title--contact">Контактная информация</h2>
+                          <div class="user-form__container user-form__container-contact">
+                              <p class="user-form__contact-item">
+                                  <label class="user-form__label user-form__label--contact" for="nomber" >Номер телефона</label>
+                                  <input class="user-form__input user-form__input--tel" placeholder="Номер, пожалуйста" type="text" id="nomber" name="contact" value="" />
                               </p>
-                              <p class="user-form__part-more">
-                                  <input class="visually-hidden user-form__input-more" type="radio" id="Android">
-                                  <label class="user-form__label user-form__label-more" for="Android">Pink на Android</label>
+                              <p class="user-form__contact-item">
+                                  <label class="user-form__label user-form__label--contact" for="email" >адрес почты</label>
+                                  <input class="user-form__input user-form__input--email"  placeholder="Введите почту *" type="text" id="email" name="contact" value="" />
                               </p>
-                              <p class="user-form__part-more">
-                                  <input class="visually-hidden user-form__input-more" type="radio" id="Windows">
-                                  <label class="user-form__label user-form__label-more" for="Windows">Windows Phone</label>
+                      </div>
+                  </div>
+                  <div class="user-form__part-app">
+                      <div class="user-form__app-container">
+                          <h2 class="user-form__title">С каким приложением путешествовали?</h2>
+                          <div class="user-form__container">
+                          <div class="user-form__app">
+                              <p class="user-form__app-item">
+                                  <input class="visually-hidden user-form__input-radio" type="radio" id="ios">
+                                  <label class="user-form__label-radio" for="ios">Pink для iOS</label>
+                              </p>
+                              <p class="user-form__app-item">
+                                  <input class="visually-hidden user-form__input-radio" type="radio" id="Android">
+                                  <label class="user-form__label-radio" for="Android">Pink на Android</label>
+                              </p>
+                              <p class="user-form__app-item">
+                                  <input class="visually-hidden user-form__input-radio" type="radio" id="Windows">
+                                  <label class="user-form__label-radio" for="Windows">Windows Phone</label>
                               </p>
                           </div>
-                  <div class="user-form__comment">
-                      <div class="wrap-form">
-                          <h3 class="user-form__title user-form__title-comment">Опишите свои эмоции</h3>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="user-form__part-coment">
+                          <h2 class="user-form__title">Опишите свои эмоции</h2>
+                          <div class="user-form__container">
                           <p class="user-form__textarea">
-                              <textarea class="user-form__input user-form__input-comment" name="textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                              <textarea class="user-form__input user-form__input-textarea" name="textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
                           </p>
                       </div>
                   </div>
-                          <div class="user-form__btn-more">
-                              <a href="#" class="btn user-form__btn"> Отправить заявку </a>
-                              <p class="user-form__text">* — Обязательные поля</p>
+                          <div class="user-form__part-button">
+                            <div class="user-form__button-container">
+                              <a href="#" class="user-form__button-sent"> Отправить форму</a>
+                              <p class="user-form__button-text">* — Обязательные поля</p>
+                            </div>
                           </div>
-                      </div>
-                  </div>
               </form>
+      </div>
+            </div>
         </main>
         <footer class="main-footer">
             <div class="container main-footer__container">
@@ -158,10 +168,10 @@
                         </svg>
                     </a>
                 </div>
-                <div class="main-footer__copiright">
-                    <p class="main-footer__copiright-text">Разработано
-                      <a class="main-footer__copiright-link" href="#">
-                        <svg  class="page-footer__copyright-image page-footer__copyright-active" width="35" height="45" viewBox="0 0 60 60">
+                <div class="main-footer__copyright">
+                    <p class="main-footer__copyright-text">Разработано
+                      <a class="main-footer__copyright-link" href="https://htmlacademy.ru/">
+                        <svg  class="main-footer__copyright-image" width="35" height="45" viewBox="0 0 60 60">
                             <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
                         </svg>
                     </a>
@@ -170,5 +180,7 @@
             </div>
         </footer>
         <script src="js/picturefill.min.js"></script>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/nav.js"></script>
     </body>
 </html>

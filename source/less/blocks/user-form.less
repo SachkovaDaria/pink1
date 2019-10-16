@@ -1,0 +1,384 @@
+.user-form {
+  margin: 50px 0 40px;
+  color: @dark;
+}
+
+.user-form__title {
+  line-height: 1.29;
+  text-align: center;
+  text-transform: uppercase;
+  color: #d22856;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.user-form__title--contact {
+  display: none;
+}
+
+.user-form__label {
+  text-align: left;
+  text-transform: uppercase;
+  color: #d22856;
+  display: block;
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.user-form__input {
+  border: solid 2px #e5e5e5;
+  padding: 20px;
+  font-size: 18px;
+  display: block;
+  margin: 0;
+  width: 100%;
+  color: @dark;
+  outline: none;
+
+  &:hover {
+    border: solid 2px @dark;
+  }
+
+  &:focus {
+    border: solid 2px #d22856;
+  }
+}
+
+.user-form__part-achieve,
+.user-form__part-app {
+  background-color: @grey-bgr;
+  padding: 40px 0;
+  margin: 0 -20px;
+}
+
+.user-form__achieve-container,
+.user-form__app-container {
+  padding: 0 20px;
+}
+
+.user-form__part-item {
+  margin: 0;
+}
+
+.user-form__label-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 50px;
+  font-size: 18px;
+  color: @dark;
+  padding-bottom: 6px;
+  padding-top: 5px;
+  margin-top: 40px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 35px;
+    height: 35px;
+    border: solid 2px #e5e5e5;
+    background-color: @white;
+    display: inline-block;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 22px;
+    height: 16px;
+    display: inline-block;
+  }
+
+  &:hover&::before {
+    border: solid 2px @dark;
+  }
+
+  &:active&::before {
+    border: solid 2px #d22856;
+  }
+}
+
+.user-form__input-checkbox:checked + .user-form__label-checkbox::after {
+  background-image: url("../img/icon-yes.svg");
+}
+
+.user-form__label-radio {
+  position: relative;
+  padding-left: 50px;
+  font-size: 18px;
+  color: @dark;
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 39px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 37px;
+    height: 36px;
+    border: solid 2px #e5e5e5;
+    border-radius: 50%;
+    background-color: @white;
+    display: inline-block;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 11px;
+    top: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    display: inline-block;
+    border-radius: 50%;
+  }
+
+  &:hover&::before {
+    border: solid 2px @dark;
+  }
+
+  &:active&::before {
+    border: solid 2px #d22856;
+  }
+}
+
+.user-form__input-radio:checked + .user-form__label-radio::after {
+  background-color: #d22856;
+}
+
+.user-form__name-part {
+  margin: 0 0 30px;
+}
+
+.user-form__part-contact {
+  margin: 40px 0 30px;
+}
+
+.user-form__contact-item {
+  margin: 35px 0 0;
+}
+
+.user-form__part-coment {
+  padding-top: 40px;
+}
+
+.user-form__textarea {
+  margin: 0;
+}
+
+.user-form__input-textarea {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  height: 197px;
+  margin-top: 20px;
+}
+
+.user-form__button-sent {
+  display: block;
+  background-color: #2aab6d;
+  border: solid 2px #2aab6d;
+  color: @white;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &:hover {
+    border: solid 2px #1c9b5e;
+    background-color: #1c9b5e;
+  }
+
+  &:focus {
+    border: solid 2px #1c9b5e;
+    background-color: #1c9b5e;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.user-form__part-button {
+  margin: 50px 0 0;
+}
+
+.user-form__button-text {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 45px 0 0;
+}
+
+@media (min-width: @tablet-width) {
+  .user-form__name-part {
+    display: flex;
+    align-items: center;
+  }
+
+  .user-form__label {
+    margin-right: 20px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .user-form__achieve-container,
+  .user-form__app-container {
+    padding: 0;
+  }
+
+  .user-form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .user-form__part {
+    order: 1;
+  }
+
+  .user-form__part-app {
+    order: 2;
+  }
+
+  .user-form__part-contact {
+    order: 3;
+  }
+
+  .user-form__part-achieve {
+    order: 4;
+  }
+
+  .user-form__part-coment {
+    order: 5;
+  }
+
+  .user-form__part-button {
+    order: 6;
+  }
+
+  .user-form__part-achieve,
+  .user-form__part-app {
+    background-color: @white;
+    margin: 0;
+  }
+
+  .user-form__container {
+    border: solid 2px #e5e5e5;
+    padding: 0 50px 45px;
+    text-align: left;
+  }
+
+  .user-form__title {
+    margin-bottom: -10px;
+    background-color: @white;
+    display: inline-block;
+    padding: 0 25px;
+  }
+
+  .user-form__title--contact {
+    display: inline-block;
+  }
+
+  .user-form__contact-item {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .user-form__label--contact {
+    margin-top: 20px;
+    padding-left: 20px;
+  }
+
+  .user-form__button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .user-form__button-text {
+    margin: 0;
+  }
+
+  .user-form__button-sent {
+    min-width: 296px;
+  }
+
+  .user-form__input--tel {
+    background: url("../img/icon-phone.svg") right 15px center/20px 20px no-repeat;
+    padding-left: 15px;
+    padding-right: 50px;
+  }
+
+  .user-form__input--email {
+    background: url("../img/icon-mail.svg") right 15px center/18px 13px no-repeat;
+    padding-left: 15px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-form {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .user-form__part-contact {
+    width: 100%;
+  }
+
+  .user-form__part-achieve {
+    width: 100%;
+  }
+
+  .user-form__part-coment {
+    width: 100%;
+  }
+
+  .user-form__part-button {
+    width: 100%;
+  }
+
+  .user-form__part-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .user-form__part-item {
+    display: flex;
+    flex: 0 1 33%;
+  }
+
+  .user-form__container-contact {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .user-form__contact-item {
+    display: flex;
+    flex: 0 1 371px;
+  }
+
+  .user-form__name-container {
+    padding: 0;
+    width: 440px;
+    margin: 0 auto;
+  }
+
+  .user-form__app-container {
+    padding: 0;
+    width: 440px;
+    margin: 0 auto;
+  }
+}

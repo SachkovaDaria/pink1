@@ -20,15 +20,25 @@
   margin-bottom: 40px;
 }
 
-.main-footer__copiright-link {
+.main-footer__copyright-link {
   fill: #d22856;
   margin-left: 5px;
 }
 
-.main-footer__copiright-text {
+.main-footer__copyright-text {
   display: flex;
   align-items: center;
   margin: 0;
+}
+
+.main-footer__copyright-image {
+  &:hover {
+    fill: @dark;
+  }
+
+  &:focus {
+    fill: rgba(40, 54, 69, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -49,7 +59,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .main-footer__copiright-text {
+  .main-footer__copyright-text {
     font-size: 18px;
   }
 }

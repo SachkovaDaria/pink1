@@ -11,7 +11,7 @@
     opacity: 0.1;
     border: solid 3px @dark;
     border-radius: 50%;
-    background-color: @white;
+    background-color: transparent;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -19,5 +19,13 @@
 
   &:first-child {
     margin-left: 0;
+  }
+
+  &:hover&::before {
+    opacity: 1;
+  }
+
+  &:focus {
+    opacity: 0.3;
   }
 }

@@ -78,28 +78,134 @@
 }
 
 @media (min-width: @tablet-width) {
+  .filter {
+    padding: 50px 0;
+  }
+
+  .filter__slide {
+    flex-direction: column;
+    margin: 0;
+  }
+
   .filter__slide-line {
-    display: block;
+    display: flex;
     min-width: 202px;
+    margin-bottom: 0;
+    margin-left: 20px;
   }
 
   .filter__slide-item {
     opacity: 1;
     fill: #d22856;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+    min-width: 275;
   }
 
   .filter__option {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+  }
+
+  .filter__slide-line--active {
+    margin: 0 20px 0;
+    position: relative;
+  }
+
+  .filter__crop-img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .filter__fill-img {
+    width: 24px;
+    height: 22px;
+  }
+
+  .filter__contrast-img {
+    width: 22px;
+    height: 16px;
+  }
+
+  .filter__option-container {
+    margin-left: 45px;
+    min-width: 260px;
+  }
+
+  .filter__button {
+    border: 0;
+    padding: 0;
+  }
+
+  .filter__slide-button {
+    padding: 15px 0;
+    margin-bottom: 25px;
+  }
+
+  .filter__slide-button--cancel {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .filter {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .filter-container {
+    padding: 0 60px 0 80px;
+  }
+
+  .filter__option-container {
+    margin-left: 90px;
+    width: 410px;
   }
 
   .filter__slide {
-    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .filter__slide-line--active .filter__slide-line {
-    margin: 0;
-    position: relative;
+  .filter__slide-item {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .filter__slide-line {
+    min-width: 288px;
+    margin-left: 55px;
+  }
+
+  .filter__crop-img {
+    width: 44px;
+    height: 44px;
+  }
+
+  .filter__fill-img {
+    width: 48px;
+    height: 43px;
+  }
+
+  .filter__contrast-img {
+    width: 44px;
+    height: 32px;
+  }
+
+  .filter__button-container {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1 0 183px;
+  }
+
+  .filter__slide-button {
+    margin-bottom: 0;
+    flex: 0 0 183px;
   }
 }
