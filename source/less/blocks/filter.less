@@ -15,12 +15,13 @@
 }
 
 .filter__slide {
-  margin-top: 42px;
-  margin-bottom: 40px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   position: relative;
+  max-width: 400px;
+  margin: 42px auto 10px;
+  padding-bottom: 70px;
 }
 
 .filter__slide-line {
@@ -38,6 +39,9 @@
   display: block;
   position: absolute;
   margin: 20px 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
 }
 
 .filter__slide-toggle {
@@ -75,6 +79,10 @@
   color: @dark;
   border: 2px solid @dark;
   opacity: 0.1;
+}
+
+.filter__list-photo {
+  width: 100%;
 }
 
 @media (min-width: @tablet-width) {
@@ -115,6 +123,8 @@
   .filter__slide-line--active {
     margin: 0 20px 0;
     position: relative;
+    left: auto;
+    right: auto;
   }
 
   .filter__crop-img {

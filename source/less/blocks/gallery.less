@@ -36,6 +36,16 @@
   }
 }
 
+.gallery__panorama-img {
+  width: 100%;
+  display: block;
+}
+
+.gallery__list-photo {
+  width: 100%;
+  display: block;
+}
+
 .gallery__list {
   list-style: none;
   padding: 0;
@@ -57,11 +67,13 @@
   .gallery__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    margin-right: -10px;
+    margin-left: -10px;
   }
 
   .gallery__list-item {
-    max-width: 300px;
+    width: 47%;
+    margin: 0 10px 20px;
   }
 
   .gallery__panorama {
@@ -78,5 +90,9 @@
     &::before {
       right: 130px;
     }
+  }
+
+  .gallery__list-item {
+    width: 300px;
   }
 }

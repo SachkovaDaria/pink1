@@ -9,19 +9,18 @@
   }
 
   .effect__container {
-    position: relative;
     display: flex;
     align-items: center;
+    position: relative;
 
     &::before {
       content: "";
-      width: 238px;
       height: 276px;
       display: block;
       background-image: url("../img/icon-timer.svg");
       background-repeat: no-repeat;
       background-size: 238px auto;
-      background-position: 0 0;
+      width: 50%;
     }
 
     &::after {
@@ -42,7 +41,8 @@
   }
 
   .effect__inner {
-    max-width: 300px;
+    width: 50%;
+    max-width: 400px;
     margin-left: 70px;
   }
 

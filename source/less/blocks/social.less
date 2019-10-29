@@ -1,31 +1,24 @@
+.social {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
 .social__item {
   fill: #d22856;
-  position: relative;
-  margin-left: 50px;
+  margin-left: 20px;
+  width: 46px;
+  height: 46px;
+  border: solid 3px rgba(40, 54, 69, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 46px;
-    height: 46px;
-    opacity: 0.1;
-    border: solid 3px @dark;
-    border-radius: 50%;
-    background-color: transparent;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  &:first-child {
-    margin-left: 0;
-  }
-
-  &:hover&::before {
-    opacity: 1;
+  &:hover {
+    border: solid 3px rgba(40, 54, 69, 1);
   }
 
   &:focus {
-    opacity: 0.3;
+    border: solid 3px rgba(40, 54, 69, 0.3);
   }
 }

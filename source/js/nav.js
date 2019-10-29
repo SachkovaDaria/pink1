@@ -1,11 +1,7 @@
-$(document).ready(function(){
+const toggleElement = document.querySelector('.main-header__toggle');
+const navElement = document.querySelector('.header-nav');
 
-  let burger = $('.main-header__toggle');
-  let nav = $('.header-nav');
-
-  burger.on('click', function (){
-
-  nav.toggleClass('header-nav--open');
-  burger.toggleClass('main-header__toggle--open')
-  })
+toggleElement.addEventListener('click', () => {
+  navElement.classList.toggle('header-nav--open');
+  toggleElement.classList.toggle('main-header__toggle--open')
 });
